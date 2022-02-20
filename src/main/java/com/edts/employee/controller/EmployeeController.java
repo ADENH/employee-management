@@ -26,7 +26,7 @@ public class EmployeeController {
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<?> getEmployee(@PathVariable Long id){
+	public ResponseEntity<?> getEmployeeById(@PathVariable Long id){
 		return service.getDataEmployee(id);
 	}
 	

@@ -25,7 +25,7 @@ public class GradeController {
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<?> getGrades(@PathVariable Long id){
+	public ResponseEntity<?> getGradesById(@PathVariable Long id){
 		return service.getGrades(id);
 	}
 	
